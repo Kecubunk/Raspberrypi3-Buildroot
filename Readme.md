@@ -10,7 +10,12 @@ cd ~/pi3
 ## 2. Get buildroot inside the created directory
 
 ```
-wget -c https://buildroot.org/downloads/buildroot-2020.02.2.tar.gz
+wget -c https://buildroot.org/downloads/buildroot-2020.02.2.tar.gz 
+tar xvf buildroot-2020.02.2.tar.gz
+cd buildroot-2020.02.2
+
+                            OR 
+git clone https://github.com/Joomlax/Raspberry-Pi3-B-Buildroot.git
 tar xvf buildroot-2020.02.2.tar.gz
 cd buildroot-2020.02.2
 ```
@@ -42,7 +47,7 @@ sudo apt install gperf bison flex texinfo
 ```
 make menuconfig
 > Target options -> Target Architecture -> Aarch64 (Little endian)
-> Toolchain -> Toolchain type -> External toolchain. The overall build time will be > reduced
+> Toolchain -> Toolchain type -> Buildroot toolchain. 
 > Toolchain -> Toolchain -> Arm AArch64 2019.12
 > Toolchain -> Toolchain has SSP support
 > Toolchain -> Toolchain has RPC support
