@@ -35,6 +35,9 @@ Target packages -> Networking applications -> wpa_supplicant -> Install wpa_pass
 Target packages -> Networking applications -> wireless.tools (for the iwconfig iwlist process)
 Target packages -> Networking applications -> dehydrated -> all dropdown selections (specially dhcp)
 Target Packages -> Networking Applications -> openssh, client, server, key utilities
+Target Packages -> Networking Applications -> dropbear
+
+
 ```
 ## 5. Edit the files of buildroot for wifi enabling
 
